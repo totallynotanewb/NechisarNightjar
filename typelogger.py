@@ -1,6 +1,7 @@
 import mouse
 import keyboard
 import time
+import os
 def event():
 # 1. Open the file in append mode. Use a context manager ('with') to ensure it safely saves and closes.
     with open("log.txt", "a") as file:
@@ -18,4 +19,5 @@ def event():
         file.write(f"{key}\n")
 while True:
     event()
+
 
